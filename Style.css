@@ -1,48 +1,55 @@
+/* General styling for the entire document */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, readable font */
+    background-color: #f4f4f9; /* Light background for contrast with text */
+    color: #333; /* Dark text color for readability */
 }
 
+/* Styling for the main container to center content and add shadow for depth */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #fff; /* White background for content areas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
+/* Header styling for the document title */
 header h1 {
     font-size: 2.5rem;
-    color: #005a4c;
-    text-align: center;
-    margin-bottom: 20px;
+    color: #005a4c; /* Green color for thematic consistency */
+    text-align: center; /* Centers the header text */
+    margin-bottom: 20px; /* Spacing after the header */
 }
 
+/* Styling for section headings to distinguish them */
 article h2 {
     font-size: 2rem;
-    color: #007b5e;
-    margin-bottom: 10px;
+    color: #007b5e; /* Slightly different green for variation */
+    margin-bottom: 10px; /* Spacing after headings */
 }
 
+/* General paragraph styling for readability */
 .preamble p, .article p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-indent: 40px;
+    line-height: 1.6; /* Increased line height for readability */
+    margin-bottom: 20px; /* Spacing between paragraphs */
+    text-indent: 40px; /* Indentation for paragraphs */
 }
 
+/* Specific styling for the preamble section for emphasis */
 .preamble {
-    background-color: #e8f0ee;
+    background-color: #e8f0ee; /* Light green background */
     padding: 15px;
-    border-left: 5px solid #007b5e;
-    margin-bottom: 20px;
+    border-left: 5px solid #007b5e; /* Thematic border */
+    margin-bottom: 20px; /* Spacing after the section */
 }
 
+/* Styling for article sections for consistency */
 .article {
-    background-color: #eef7f6;
+    background-color: #eef7f6; /* Even lighter green for differentiation */
     padding: 15px;
-    border-left: 5px solid #005a4c;
-    margin-bottom: 10px;
+    border-left: 5px solid #005a4c; /* Consistent thematic border */
+    margin-bottom: 10px; /* Spacing after the section */
 }
