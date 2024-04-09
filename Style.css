@@ -1,65 +1,69 @@
-/* Enhance overall readability and aesthetics */
+/* Basic reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
-    /* ... existing properties ... */
-    background-color: #eaeaea; /* A slightly darker background can help the text stand out more */
-    color: #1a1a1a; /* Darker text for improved readability */
+    font-family: 'Georgia', serif;
+    line-height: 1.75;
+    color: #333;
+    background-color: #fdfdfc;
+    padding: 1rem;
 }
 
 .container {
-    /* ... existing properties ... */
-    background-color: #ffffff; /* Maintain a white background for the content area to maximize contrast */
-    /* Consider adding a bit more padding for a more spacious feel */
-    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    /* ... existing properties ... */
-    color: #004d40; /* Opt for a darker green for the title */
-    margin-bottom: 30px; /* More space below the header */
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #000;
 }
 
-article h2 {
-    /* ... existing properties ... */
-    color: #00695c; /* A slightly darker shade of green for section headings */
-    margin-bottom: 15px; /* Increase spacing */
+header p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #555;
+    text-align: justify;
 }
 
-.preamble, .article {
-    /* ... existing properties ... */
-    line-height: 1.8; /* Increase line height for better readability */
-    padding: 20px; /* Increase padding for a less cramped look */
-    margin-bottom: 25px; /* Increase margin */
+.article-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
 }
 
-.preamble {
-    /* ... existing properties ... */
-    background-color: #ddf2f1; /* A softer green for the preamble background */
+.article-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #005b96;
 }
 
-.article {
-    /* ... existing properties ... */
-    background-color: #e8f5f2; /* A lighter, softer green for article sections */
+.article-section p {
+    text-align: justify;
+    margin-bottom: 1rem;
 }
 
-/* For links or interactive elements, ensure they are clearly distinguishable */
-a {
-    color: #00897b;
-    text-decoration: none; /* Optional: Removes underline from links */
-}
-
-a:hover {
-    text-decoration: underline; /* Reintroduce underline on hover for interactivity */
-}
-
-/* Add media queries for responsive adjustments on smaller screens */
-@media (max-width: 768px) {
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
     .container {
-        padding: 15px;
+        width: 95%;
     }
-    
-    header h1, article h2 {
-        font-size: smaller; /* Adjust font size on smaller screens for better fit */
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .article-section h2 {
+        font-size: 1.25rem;
     }
 }
-
-/* Remember to test color combinations for accessibility */
