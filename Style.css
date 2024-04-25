@@ -1,69 +1,248 @@
-/* Basic reset and base styles */
-* {
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, figure, figcaption {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body, html {
-    font-family: 'Georgia', serif;
-    line-height: 1.75;
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    line-height: 1.6;
     color: #333;
-    background-color: #fdfdfc;
-    padding: 1rem;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+/* Navigation bar styles */
+nav {
+    background-color: #0072BB;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling for the main banner */
+header {
+    background: #48A9A6 url('images/banner.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #000;
+    margin-bottom: 20px;
+    font-size: 2.5em;
 }
 
-header p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    color: #555;
-    text-align: justify;
+/* Main content styles */
+main {
+    padding: 20px;
+    background: white;
+    margin-top: 20px;
 }
 
-.article-section {
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #cccccc;
 }
 
-.article-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #005b96;
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0072BB;
+    color: white;
 }
 
-.article-section p {
-    text-align: justify;
-    margin-bottom: 1rem;
-}
-
-/* Responsive design for smaller screens */
-@media screen and (max-width: 768px) {
-    .container {
-        width: 95%;
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
     }
 
-    header h1 {
-        font-size: 1.5rem;
+    header {
+        padding: 20px;
     }
+}
 
-    .article-section h2 {
-        font-size: 1.25rem;
-    }
+/* Customization for buttons (e.g., Read More, Contact Us) */
+button {
+    background-color: #48A9A6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #00539C;
+}
+
+/* Typography customization for headings and text */
+h1, h2, h3 {
+    color: #00539C; /* Cohesive color scheme across all headings */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger text for better readability */
+}
+
+/* Styling for links to make them more noticeable */
+a {
+    color: #0072BB;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #00539C;
+}
+
+/* About Us specific styles */
+.about-intro, .about-mission, .about-vision, .about-history, .about-team {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-left: 5px solid #0072BB;
+}
+
+.team-member {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e9e9e9;
+}
+
+.team-member img {
+    float: left;
+    margin-right: 15px;
+    width: 100px; /* Adjust size as necessary */
+    height: 100px; /* Adjust size as necessary */
+    border-radius: 50%; /* Circular images for team members */
+}
+
+.active {
+    background-color: #00539C;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    color: #00539C;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #48A9A6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0072BB;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.gallery-item {
+    width: 300px;
+    margin: 15px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: rounds the corners of the images */
+}
+
+figcaption {
+    color: #333;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.contact-form form {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #48A9A6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #0072BB;
 }
